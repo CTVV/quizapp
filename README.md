@@ -14,9 +14,9 @@ If you find this app usefull, please give me a star. I'am open for any advice ho
 Use command terminal and type:
 <code> git clone https://github.com/CTVV/ctvv.github.io.git</code>
 Use command terminal in folder with this project and type:
-<code> npm install</code>
-<code> npm run webpack</code>
-<code> npm run serve</code>
+<p><code> npm install</code></p>
+<p><code> npm run webpack</code></p>
+<p><code> npm run serve</code></p>
 From now you can have fun playing a quiz game!
 <h2>License</h2>
 MIT License - Check LICENSE file
