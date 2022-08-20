@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Quiz App</title>
+        <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../src/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../src/favicon/site.webmanifest">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="game-menu">
+                <div class="header">Choose number of questions:</div>
+                <button class="options query-question" id="fiveQuestions" value="5">5 Questions</button>
+                <button class="options query-question" id="tenQuestions" value="10">10 Questions</button>
+                <button class="options query-question" id="twentyFiveQuestions" value="25">25 Questions</button>
+                <button class="options query-question" id="fiftyQuestions" value="50">50 Questions</button>
+                <button class="options" id="checkScoreboard" value="">Check Scoreboard</button>
+            </div>
+            <div class="quiz-selection not-visible">
+                <div class="header">Choose category:</div>
+                <button class="options query-category" id="categoryAnimals" value="27">Animals</button>
+                <button class="options query-category" id="categoryHistory" value="23">History</button>
+                <button class="options query-category" id="categoryVehicles" value="28">Vehicles</button>
+                <button class="options query-category" id="categoryScience" value="18">Science: Computer</button>
+                <button class="options query-category" id="categorySports">Sports</button>
+            </div>
+            <div class="loading not-visible">
+                    <img src="./src/images/Spinner-1s-200px.svg" alt="Loading Animation">
+            </div>
+            <div class="game not-visible">
+                <div class="question" id="question"></div>
+                <button class="options answer" id="first"></button>
+                <button class="options answer" id="second"></button>
+                <button class="options answer" id="third"></button>
+                <button class="options answer" id="forth"></button>
+            </div>
+            <div class="end-game not-visible">
+                <div class="winner">Congratulations!</div>
+                <div>Your score is: <span id="score"></span></div>
+                <div>
+                <button type="button" id="tryAgain">Try again!</button>
+                </div>
+            </div>
+            <div class="scoreboard not-visible">
+                <div class="header">Best Scores: </div>
+                    <div class="box">
+
+                    </div>
+                <button class="options" id="goToMenu">Go to Menu</button>
+            </div>
+            <div class="question-number not-visible"></div>
+        </div>
+        <div class="contact-info">
+            <div class="icons">
+                <a href="https://github.com/CTVV/ctvv.github.io" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marcin-k%C4%99dzierski-966456235/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="author">
+                CTVV Design
+            </div>
+        </div>
+        <!-- Script  -->
+        <script src="dist/bundle.js" ></script>
+    </body>
+</html>

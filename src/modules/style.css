@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+    --first-color: #ABC9FF;
+    --second-color: #FFDEDE;
+    --third-color: #FF8B8B;
+    --fourth-color: #EB4747;
+    --font-color: rgba(0,0,0,0.8);
+    --border-radius: 50px;
+    font-size: 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background-color: #ffdede;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='84' viewBox='0 0 126 84'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23abc9ff' fill-opacity='0.41'%3E%3Cpath d='M126 83v1H0v-2h40V42H0v-2h40V0h2v40h40V0h2v40h40V0h2v83zm-2-1V42H84v40h40zM82 42H42v40h40V42zm-50-6a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm96 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm-42 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm30-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM20 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 24a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24-42a4 4 0 1 1 0-8 4 4 0 0 1 0 8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Bebas Neue', cursive;
+}
+
+
+/* Menu */
+.menu {
+    width: 600px;
+    height: 600px;
+    background: var(--first-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    border: 3px solid rgba(30,30,30,0.3);
+    position: absolute;
+}
+
+.game-menu {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Options */
+button {
+    font-size: 2rem;
+    font-family:'Bebas Neue', cursive;
+    background: #72a2fc;
+}
+
+.options {
+    width: 90%;
+    height: 75px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    border: solid rgba(30,30,30,0.3);
+    overflow: auto;
+    letter-spacing: normal;
+    line-height: 1;
+}
+
+
+.options:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 5px rgba(30,30,30,0.3);
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: var(--fourth-color);
+}
+
+.header {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quiz selection */
+.quiz-selection {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Actual game */
+
+.game {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    line-height: 1;
+    border-bottom: solid rgba(30,30,30,0.3);
+    overflow: auto;
+    letter-spacing: normal;
+}
+
+.question-number {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 5%;
+    bottom: 1.5%;
+}
+
+/* End game */
+.end-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.winner {
+    font-size: 4rem;
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
+
+#tryAgain {
+    margin-top: 50px;
+    width: 300px;
+    height: 100px;
+    border-radius: var(--border-radius);
+    border: none;
+    background: var(--second-color);
+    color: #EB4747;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#tryAgain:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    font-size: 2rem;
+    box-shadow: 0 10px 10px rgba(30,30,30,0.3);
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scores {
+    border-bottom: 1px solid rgba(30,30,30,0.3);
+    color: green;
+}
+
+
+.not-visible {
+    display: none;
+}
+
+.contact-info {
+    color: var(--font-color);
+    position: fixed;
+    bottom: 0%;
+    right: 2%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+.icons {
+    height: 50px;
+    width:100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.icons i:hover {
+    color:#72a2fc;
+    cursor: pointer;
+}
+
+a {
+    outline: none;
+}
+
+a:visited {
+    color: var(--font-color);
+}
+/* MediaQuery */
+@media screen and (max-width: 640px) {
+    .menu {
+        width: 300px;
+        height: 300px;
+        font-size: 1rem;
+    }
+
+    .question-number {
+        right: 6%;
+        bottom: 3%;
+        font-size: 0.8rem;
+    }
+
+    .options {
+        height: 35px;
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+
+    .options:hover {
+        font-size: 1.1rem;
+    }
+
+    .header {
+        font-size: 1.2rem;
+    }
+
+    .question {
+        height: 70px;
+    }
+
+    .winner {
+        font-size: 2rem;
+    }
+
+    #tryAgain {
+        width: 150px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    #tryAgain:hover {
+        font-size: 1.2rem;
+    }
+
+    .contact-info{
+        font-size: 1rem;
+        height: 80px;
+        width: 80px;
+    }
+
+    .icons {
+        height: 40px;
+        width: 80px;
+        font-size: 1.3rem;
+    }
+}
