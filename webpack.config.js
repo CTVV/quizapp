@@ -5,13 +5,13 @@ module.exports = {
     mode: "development",
     output: {
       filename: "bundle.js",
-      path: path.resolve(__dirname, "/dist"),
+      path: path.resolve(__dirname, "dist"),
       publicPath: "/",
     },
       devServer: {
         static:
           {
-            directory: path.resolve(__dirname, ''),
+            directory: path.resolve(__dirname, '/'),
             publicPath: '/',
           },
         port: 9000,
