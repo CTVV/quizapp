@@ -11,7 +11,7 @@ module.exports = {
       devServer: {
         static:
           {
-            directory: path.resolve(__dirname, '/'),
+            directory: path.resolve(__dirname, ''),
             publicPath: '/',
           },
         port: 9000,
