@@ -11,10 +11,10 @@ The public database that i used had and issue with html enteties - so i made an 
 If you find this app usefull, please give me a star. I'am open for any advice how could i make this better or create new features.
 
 <h2>Install and Run the Project</h2>
-Use command terminal and type:
-<code> https://github.com/CTVV/quizapp.git</code>
-Use command terminal in folder with this project and type:
-<p><code> npm install</code></p>
+Use command terminal in location where you want an app and type:
+<code>git clone https://github.com/CTVV/quizapp.git</code>
+<p><code> cd quizapp</code></p>
+<p><code> npm i</code></p>
 <p><code> npm run webpack</code></p>
 <p><code> npm run serve</code></p>
 From now you can have fun playing a quiz game!
