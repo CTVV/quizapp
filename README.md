@@ -12,7 +12,7 @@ If you find this app usefull, please give me a star. I'am open for any advice ho
 
 <h2>Install and Run the Project</h2>
 Use command terminal and type:
-<code> git clone https://github.com/CTVV/ctvv.github.io.git</code>
+<code> https://github.com/CTVV/quizapp.git</code>
 Use command terminal in folder with this project and type:
 <p><code> npm install</code></p>
 <p><code> npm run webpack</code></p>
