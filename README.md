@@ -12,7 +12,7 @@ If you find this app usefull, please give me a star. I'am open for any advice ho
 
 <h2>Install and Run the Project</h2>
 Use command terminal in location where you want an app and type:
-<code>git clone https://github.com/CTVV/quizapp.git</code>
+<p><code>git clone https://github.com/CTVV/quizapp.git</code></p>
 <p><code> cd quizapp</code></p>
 <p><code> npm i</code></p>
 <p><code> npm run webpack</code></p>
